@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1dy6e3a35gsl"]
+
+[ext_resource type="Texture2D" uid="uid://djxm5x2udxqwi" path="res://art/frog2.png" id="1_xjuvi"]
+
+[node name="frogsprite" type="Sprite2D" groups=["frogsprites"]]
+texture = ExtResource("1_xjuvi")

@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://616xp3kftir1"]
+
+[ext_resource type="Script" path="res://scripts/wood.gd" id="1_je6f3"]
+[ext_resource type="Texture2D" uid="uid://vda58w3rp4gv" path="res://art/woodright.png" id="1_w78xv"]
+[ext_resource type="Texture2D" uid="uid://dl26q1u2scf3q" path="res://art/woodleft.png" id="2_fi1q0"]
+[ext_resource type="Texture2D" uid="uid://cxycojjn3g7is" path="res://art/woodcenter.png" id="4_rxeq1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t8jb1"]
+size = Vector2(96, 16)
+
+[node name="wood6" type="Area2D"]
+script = ExtResource("1_je6f3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(40, 0)
+shape = SubResource("RectangleShape2D_t8jb1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(80, 0)
+texture = ExtResource("1_w78xv")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture = ExtResource("2_fi1q0")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(16, 0)
+texture = ExtResource("4_rxeq1")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(32, 0)
+texture = ExtResource("4_rxeq1")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(48, 0)
+texture = ExtResource("4_rxeq1")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(64, 0)
+texture = ExtResource("4_rxeq1")

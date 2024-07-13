@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://b74ennyfoy3mn"]
+
+[ext_resource type="Script" path="res://scripts/turtle.gd" id="1_e2me4"]
+[ext_resource type="Texture2D" uid="uid://bybfe16fy6ca" path="res://art/turtle.png" id="1_w7ery"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_43j13"]
+size = Vector2(15, 14)
+
+[node name="turtle" type="Area2D"]
+script = ExtResource("1_e2me4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_43j13")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_w7ery")
+hframes = 3
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

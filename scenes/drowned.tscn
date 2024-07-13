@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dksbuoq4i6b3y"]
+
+[ext_resource type="Texture2D" uid="uid://dualjuyvole5y" path="res://art/drowned.png" id="1_djaiv"]
+[ext_resource type="Script" path="res://scripts/drowned.gd" id="2_itgll"]
+
+[node name="drowned" type="Sprite2D"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_djaiv")
+hframes = 3
+script = ExtResource("2_itgll")
